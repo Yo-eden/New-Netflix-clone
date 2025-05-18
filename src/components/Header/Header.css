@@ -1,0 +1,68 @@
+.Header_Container{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: sticky;
+    background-color: #111;
+    height: 70px;
+    color: white;
+    transition: background-color 0.4s ease-in-out;
+    width: 100%;
+    padding:0  20px;
+    top: 0;
+}
+.Header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.Left_side{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+}
+.Header_Logo{
+    width: 100px;
+}
+
+.Header_links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Header_links li{
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+.Header_links li:hover{
+    color: #bbb;
+}
+.Rigth_side{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.Header_Icons{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .Header_Container {
+        padding: 10px 0;
+    }
+    .Left_side ul {
+        display: none;
+    }
+    .Rigth_side {
+        padding: 30px;
+    }
+}
